@@ -1,66 +1,87 @@
-/* Center everything and set a background */
-.container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  border: 1px solid #ddd;
+/* Main Page Container */
+.main-page {
+  background: white;
+  border: 1px solid black;
+  width: 450px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h1 {
+/* Header Text */
+.app-header {
+  border-bottom: 1px solid black;
   text-align: center;
-  font-size: 24px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
+  padding: 20px;
 }
 
-/* Style the Form to match the box in the mock-up */
-.project-form {
-  border: 1px solid #000;
-  padding: 15px;
-  margin-bottom: 20px;
-  background: white;
+.app-header h1 {
+  font-size: 1.3rem;
+  font-weight: 800; /* Extra Bold */
+  margin: 0;
+  color: #000;
+  letter-spacing: -0.5px;
 }
 
-.project-form input {
-  display: block; /* Makes inputs stack vertically like the mock-up */
-  width: 100%;
-  margin: 10px 0;
-  padding: 8px;
-  box-sizing: border-box; /* Prevents input from overflowing */
-}
-
-.project-form button {
-  padding: 8px 20px;
-  cursor: pointer;
-}
-
-/* Search Bar styling */
-.search-bar input {
-  width: 100%;
-  padding: 8px;
+/* Form Labels & Section Titles */
+.section-header {
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold */
   margin-bottom: 15px;
-  border: 1px solid #000;
+  color: #000;
 }
 
-/* Project Cards */
-.project-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: white;
+.form-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700; /* Bold Labels */
+  margin-bottom: 5px;
+  color: #222;
+}
+
+/* Project List Styling */
+.project-item {
   display: flex;
   align-items: center;
+  padding: 18px 20px;
+  border-top: 1px solid black;
 }
 
-.project-icon { /* The square with the X in the mock-up */
-  width: 50px;
-  height: 50px;
-  border: 1px solid #aaa;
-  margin-right: 15px;
+/* The Icon Box 'X' */
+.icon-container {
+  width: 42px;
+  height: 42px;
+  border: 1px solid black;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  color: #aaa;
+  margin-right: 15px;
+  font-size: 1.4rem;
+  font-weight: 300; /* Thin X, just like the image */
+  color: #666;
+}
+
+/* Pronounced Project Details */
+.project-title {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  font-weight: 700; /* Stronger Title */
+  color: #000;
+}
+
+.project-description {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500; /* Medium weight for readability */
+  color: #444; /* Slightly lighter than title for hierarchy */
+}
+
+/* Search Bar Text */
+.search-projects-input {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  outline: none;
 }

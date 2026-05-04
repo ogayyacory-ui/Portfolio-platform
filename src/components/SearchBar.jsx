@@ -1,16 +1,17 @@
- import React from 'react';
+import React from 'react';
 
-function SearchBar({ setSearchTerm }) {
+const SearchBar = ({ searchTerm, onSearchChange }) => {
   return (
-    <div className="search-bar">
+    <div className="search-container">
       <input 
         type="text" 
-        placeholder="Search projects..." 
-        onChange={(e) => setSearchTerm(e.target.value)}
-        style={{ width: '100%', padding: '10px', marginBottom: '20px' }}
+        className="search-projects-input" 
+        placeholder="Search Projects" 
+        value={searchTerm}
+        onChange={(e) => onSearchChange(e.target.value)}
       />
     </div>
   );
-}
+};
 
 export default SearchBar;
